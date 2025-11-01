@@ -20,7 +20,7 @@ rich-diagnostics = ["facet-deserialize/rich-diagnostics"]
 default = ["std", "rich-diagnostics"]
 
 [dependencies]
-facet-core = { version = "0.28.0", default-features = false }
+facet-core = { version = "0.31.0", default-features = false }
 facet-deserialize = { version = "0.28.0", default-features = false }
 facet-reflect = { version = "0.28.0", default-features = false }
 facet-serialize = { version = "0.28.0", default-features = false }
