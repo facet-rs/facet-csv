@@ -4,9 +4,9 @@ version = 4
 
 [[package]]
 name = "ariadne"
-version = "0.5.1"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36f5e3dca4e09a6f340a61a0e9c7b61e030c69fc27bf29d73218f7e5e3b7638f"
+checksum = "8454c8a44ce2cb9cc7e7fae67fc6128465b343b92c6631e94beca3c8d1524ea5"
 dependencies = [
  "unicode-width",
  "yansi",
@@ -80,7 +80,7 @@ version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3290e0be77e9eeca366489c3b4010764dc897a83e5936a93857c3937f47a57aa"
 dependencies = [
- "facet-core",
+ "facet-core 0.28.0",
  "facet-macros",
  "static_assertions",
 ]
@@ -96,15 +96,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "facet-core"
+version = "0.31.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9c8464c389054f871191fbd688bade5e4f21f59948a56029ea37f2359f3dc330"
+dependencies = [
+ "bitflags",
+ "impls",
+]
+
+[[package]]
 name = "facet-csv"
 version = "0.28.0"
 dependencies = [
  "cargo-husky",
  "eyre",
  "facet",
- "facet-core",
+ "facet-core 0.28.0",
  "facet-deserialize",
- "facet-reflect",
+ "facet-reflect 0.28.0",
  "facet-serialize",
  "facet-testhelpers",
  "insta",
@@ -113,13 +123,13 @@ dependencies = [
 
 [[package]]
 name = "facet-deserialize"
-version = "0.28.0"
+version = "0.31.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "354d1bd711910e6b470a4468f5e61e2ca29346f83c701d624cf14b8d173d76b6"
+checksum = "1d39a9c464d6a1bf205ddaa3f995254be30ca7e255e63022aa551530949d15f4"
 dependencies = [
  "ariadne",
- "facet-core",
- "facet-reflect",
+ "facet-core 0.31.7",
+ "facet-reflect 0.31.7",
  "log",
  "owo-colors",
 ]
@@ -130,7 +140,7 @@ version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7eb526288148251e984f3a9ab3cef5191ca1da34a45fb5c548781e7053148e19"
 dependencies = [
- "facet-core",
+ "facet-core 0.28.0",
  "facet-macros-emit",
 ]
 
@@ -162,8 +172,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c1d24ca6fb9db79b26cb5e37d744591d710e05922dbca7c53505113151b50aef"
 dependencies = [
  "bitflags",
- "facet-core",
+ "facet-core 0.28.0",
  "owo-colors",
+]
+
+[[package]]
+name = "facet-reflect"
+version = "0.31.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "74c8581c34ca6f0cec86091b5633aff723baa0e121c35da0f32620b8ef3bb44c"
+dependencies = [
+ "bitflags",
+ "facet-core 0.31.7",
 ]
 
 [[package]]
@@ -172,8 +192,8 @@ version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cca2724e50a1f41f9f0d3a035b9dd8ef4d174f2c3bfd7caaab4baeb6d69feed9"
 dependencies = [
- "facet-core",
- "facet-reflect",
+ "facet-core 0.28.0",
+ "facet-reflect 0.28.0",
  "log",
 ]
 
@@ -314,9 +334,9 @@ checksum = "5a5f39404a5da50712a4c1eecf25e90dd62b613502b7e925fd4e4d19b5c96512"
 
 [[package]]
 name = "unicode-width"
-version = "0.1.14"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7dd6e30e90baa6f72411720665d41d89b9a3d039dc45b8faea1ddd07f617f6af"
+checksum = "b4ac048d71ede7ee76d585517add45da530660ef4390e49b098733c6e897f254"
 
 [[package]]
 name = "unsynn"
